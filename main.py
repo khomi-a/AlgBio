@@ -1,9 +1,16 @@
-def construct_dB_grap():
-    pass
+from de_Bruijn_graph import De_Bruijn_graph as DBG
+import pyfastx
 
 
-def save_contigs():
-    pass
+def save_contigs(contigs):
+    """
+    Save contigs in ~ .fa format
+    :param contigs: list of strings
+    :return: None
+    """
+    with open('contigs.txt', 'w') as file:
+        for i, c in enumerate(contigs):
+            file.write(f'> contig {i + 1}\n' + c + '\n')
 
 
 def invert_sequence(s):
@@ -17,5 +24,12 @@ def invert_sequence(s):
 
 
 if __name__ == "__main__":
-    construct_dB_grap()
+    dbg = DBG(k=90)
+
+    lfq = pyfastx.Fastq('data/Carsonella_ruddii_reads_paired_reads_left.fastq')
+    rfq = pyfastx.Fastq('data/Carsonella_ruddii_reads_paired_reads_right.fastq')
+
+    dbg.update_graph(lfq)
+    contigs = dbg.get_contigs()
     save_contigs()
+

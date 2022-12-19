@@ -13,7 +13,7 @@ Following packages are required:
 ## Task 2 - Mass spectrometry
 
 Based on the given unknown spectrum we have to determin the proteins' amino acid chain:\
-/2. Mass spec Tyrocidine/spectrum.png
+[_](https://github.com/khomi-a/AlgBio/blob/main/2.%20Mass%20spec%20Tyrocidine/spectrum.png)
 Following packages are required:
 * [networkx](https://networkx.org/)
 * [pyfastx](https://github.com/lmdu/pyfastx)

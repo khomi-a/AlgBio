@@ -16,3 +16,14 @@ Based on the given unknown spectrum we have to determin the proteins' amino acid
 ![](https://github.com/khomi-a/AlgBio/blob/main/2.%20Mass%20spec%20Tyrocidine/spectrum.png)\
 Following packages are required:
 * numpy
+
+## Task 3 - Synteny search
+
+We have to find synteny blocks for X-chromosomes of mouse and human.\
+Find 2-break distances between circualized chromosomes.\
+Determine *maxDistance* and *minSize* influence on these distances\
+
+Based on the given unknown spectrum we have to determine the proteins' amino acid chain:\
+![](https://github.com/khomi-a/AlgBio/blob/main/2.%20Mass%20spec%20Tyrocidine/spectrum.png)\
+Following packages are required:
+* Bio

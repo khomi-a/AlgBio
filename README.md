@@ -19,9 +19,10 @@ Following packages are required:
 
 ## Task 3 - Synteny search
 
-We have to find synteny blocks for X-chromosomes of mouse and human.\
-Find 2-break distances between circualized chromosomes.\
-Determine *maxDistance* and *minSize* influence on these distances\
+We have to:
+* find synteny blocks for X-chromosomes of mouse and human.
+* find 2-break distances between circualized chromosomes.
+* determine *maxDistance* and *minSize* influence on these distances.
 
 ![](https://github.com/khomi-a/AlgBio/blob/main/3.%20Synteny/anchors.jpg)\
 Following packages are required:

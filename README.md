@@ -23,7 +23,14 @@ We have to:
 * find synteny blocks for X-chromosomes of mouse and human.
 * find 2-break distances between circualized chromosomes.
 * determine *maxDistance* and *minSize* influence on these distances.
+Look through functions [here](https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track).
 
 ![](https://github.com/khomi-a/AlgBio/blob/main/3.%20Synteny/anchors.jpg)\
 Following packages are required:
 * [Bio](https://pypi.org/project/bio/)
+
+## Task 4 - Longest repeat in a string
+
+[Problem](https://rosalind.info/problems/ba9d/)
+
+Solution is based on Ukkonen's linear-time algorithm ([link1](https://en.wikipedia.org/wiki/Ukkonen%27s_algorithm), [link2](https://habr.com/ru/post/681940/)).

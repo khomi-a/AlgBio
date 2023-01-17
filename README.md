@@ -33,4 +33,4 @@ Following packages are required:
 
 [Problem](https://rosalind.info/problems/ba9d/)
 
-Solution is based on Ukkonen's linear-time algorithm ([link1](https://en.wikipedia.org/wiki/Ukkonen%27s_algorithm), [link2](https://habr.com/ru/post/681940/)).
+Solution is based on Ukkonen's linear-time algorithm for suffix trees([link1](https://en.wikipedia.org/wiki/Ukkonen%27s_algorithm), [link2](https://habr.com/ru/post/681940/)).

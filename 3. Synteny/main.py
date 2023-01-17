@@ -20,21 +20,23 @@ def chromosome_to_cycle(chromosome):
     return nodes
 
 
-def cycle_to_chromosome(nodes, output = False):
+def cycle_to_chromosome(nodes, output=False):
     chromosome = []
-    for j in range(1,len(nodes),2):
-        if nodes[j-1] < nodes[j]:
+    for j in range(1, len(nodes), 2):
+        if nodes[j - 1] < nodes[j]:
             chromosome.append(nodes[j] // 2)
         else:
-            chromosome.append(-nodes[j-1] // 2)
+            chromosome.append(-nodes[j - 1] // 2)
     if output:
         print(' '.join(('+' if i > 0 else '') + str(i) for i in chromosome))
     else:
         return chromosome
 
+
 def preprocess(genome):
-  genome = [[int(val) for val in chrom.split()] for chrom in genome[1:-1].split(')(')]
-  return genome
+    genome = [[int(val) for val in chrom.split()] for chrom in genome[1:-1].split(')(')]
+    return genome
+
 
 def formation(p):
     for j in range(len(p)):
@@ -114,7 +116,8 @@ def break_2_on_genome(p, i1, i2, i3, i4):
     p = graph_to_genome(genome_graph)
     return p
 
-def dist_2_break(p,q):
+
+def dist_2_break(p, q):
     '''
     The 2-break distance between genomes P and Q is equal to Blocks(P, Q) - Cycles(P, Q).
     Blocks(P, Q) = Cycles(Q, Q)
@@ -137,30 +140,33 @@ def dist_2_break(p,q):
 
     return len(colored_edges_Q) - n_cycle
 
+
 def shared_kmers(k, dna1, dna2):
     dnadict = {}
     for i in range(len(dna1) - k + 1):
-        if dna1[i:i+k] in dnadict:
-            dnadict[dna1[i:i+k]].append(i)
+        if dna1[i:i + k] in dnadict:
+            dnadict[dna1[i:i + k]].append(i)
         else:
-            dnadict[dna1[i:i+k]] = [i]
+            dnadict[dna1[i:i + k]] = [i]
     dn = []
     reverse_comp = str(Seq(dna2).reverse_complement())
 
     for j in range(len(dna2) - k + 1):
-        if dna2[j:j+k] in dnadict:
-            for seq in dnadict[dna2[j:j+k]]:
+        if dna2[j:j + k] in dnadict:
+            for seq in dnadict[dna2[j:j + k]]:
                 dn.append([seq, j])
-        elif str(Seq(dna2[j:j+k]).reverse_complement()) in dnadict:
-            for seq in dnadict[str(Seq(dna2[j:j+k]).reverse_complement())]:
+        elif str(Seq(dna2[j:j + k]).reverse_complement()) in dnadict:
+            for seq in dnadict[str(Seq(dna2[j:j + k]).reverse_complement())]:
                 dn.append([seq, j])
 
     return dn
+
 
 def read_dna(file_path):
     with open(file_path) as file:
         for line in file:
             return line
+
 
 if __name__ == "__main__":
     k = 15

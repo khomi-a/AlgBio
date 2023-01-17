@@ -67,6 +67,7 @@ if __name__ == "__main__":
         file.write(BWT(text))
     # print(BWT(text) == inverseBWT(BWT(text)))
 
+
 ##########################################
 # EXTRA: suffix array bwt implementation #
 ##########################################

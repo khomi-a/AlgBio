@@ -2,14 +2,14 @@ from de_Bruijn_graph import De_Bruijn_graph as DBG
 import pyfastx
 
 
-def save_contigs(contigs):
+def save_contigs(contigs_):
     """
     Save contigs in ~ .fa format
-    :param contigs: list of strings
+    :param contigs_: list of strings
     :return: None
     """
     with open('contigs/output_contigs.fa', 'w') as file:
-        for i, c in enumerate(contigs):
+        for i, c in enumerate(contigs_):
             file.write(f'> contig {i + 1}\n' + c + '\n')
 
 

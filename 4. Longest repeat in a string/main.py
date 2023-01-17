@@ -106,5 +106,6 @@ if __name__ == "__main__":
             repeated.append(i)
     print('Repeated:', repeated)
     print('Longest repeated:', [s for s in repeated if len(s) == max(map(len, repeated))])
+    # output
     # Repeated: ['ATCGTT', 'AT', 'TATCGTT', 'TCGTT', 'TTT', 'TT', 'T', 'CGTT', 'GTT']
     # Longest repeated: ['TATCGTT']

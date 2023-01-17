@@ -37,6 +37,8 @@ Solution is based on Ukkonen's linear-time algorithm for suffix trees ([link1](h
 
 ## Task 5 - Burrows–Wheeler transform
 
-We have to implement BWT for Mycoplasmoides pneumoniae's M129 [sequence](https://www.ncbi.nlm.nih.gov/nuccore/NC_000912.1).
+We have to implement BWT ([problem1](https://rosalind.info/problems/ba9i/)) for Mycoplasmoides pneumoniae's M129 [sequence](https://www.ncbi.nlm.nih.gov/nuccore/NC_000912.1).
 
+![](https://github.com/khomi-a/AlgBio/blob/main/5.%20Burrows%E2%80%93Wheeler%20transform/BWT.png)
 
+[Inverse transformation](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform) ([problem2](https://rosalind.info/problems/ba9j/)) was also implemented.
